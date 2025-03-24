@@ -16,32 +16,12 @@ A web application for listing and exploring Islamic products such as prayer mats
 ## Installation
 ### 1️⃣ Clone the repository
 ```sh
-git clone https://github.com/yourusername/islamic-products-app.git
-cd islamic-products-app
+git clone https://github.com/KhanSidd1416/Al-Shaz-UI.git
 ```
 
 ### 2️⃣ Install dependencies
-#### Backend
 ```sh
-cd backend
 npm install
-```
-#### Frontend
-```sh
-cd frontend
-npm install
-```
-
-### 3️⃣ Run the application
-#### Backend
-```sh
-cd backend
-npm start
-```
-#### Frontend
-```sh
-cd frontend
-npm start
 ```
 
 ## API Endpoints
