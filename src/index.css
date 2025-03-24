@@ -1,0 +1,73 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply font-mono;
+  background: url(../public/assets/AlShaz.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps background stable */
+  overflow: hidden;
+  color: white;
+}
+
+/* Bottom-to-top animation for mobile */
+@media (max-width: 640px) {
+  .animate-bottom-popup {
+    animation: bottomPopup 0.3s ease-out forwards;
+  }
+
+  @keyframes bottomPopup {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* Centered animation for desktop */
+@media (min-width: 640px) {
+  .animate-center-popup {
+    animation: centerPopup 0.3s ease-out forwards;
+  }
+
+  @keyframes centerPopup {
+    from {
+      transform: scale(0.7);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.text-gradient-white {
+  background: linear-gradient(to top right, rgb(200, 200, 200), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 20px;
+}
